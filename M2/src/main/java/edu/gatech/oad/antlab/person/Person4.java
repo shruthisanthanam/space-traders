@@ -31,7 +31,13 @@ public class Person4 {
      */
     private String calc(String input) {
       //Person 4 put your implementation here
-      return null;
+      String newC = "";
+      
+      for (char i : input.toCharArray()) {
+        newC += Character.toString((char)(((c - 'a' + 1) % 26) + 'a'));
+      }
+ 
+      return newC;                       
     }
     
     /**
